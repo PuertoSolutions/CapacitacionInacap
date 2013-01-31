@@ -66,7 +66,7 @@
 				if(isset($_GET["P"])){
 
 				}else{
-					required "Vistas/default.php";
+					require("Vistas/default.php");
 				}
 			?>
 			<hr>
