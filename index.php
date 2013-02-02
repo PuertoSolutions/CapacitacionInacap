@@ -2,14 +2,14 @@
 <html lang="es">
     <head>
 		<meta charset="utf-8">
-		<title>Watashi no Akaunto</title>
+		<title>Capacitaci&oacute;n</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Sistema Pedidos Taxi Online">
 		<meta name="author" content="Puerto Solutions">
-		<link rel="stylesheet" type="text/css" href="/assets/css/cyborg_bootstrap.min.css">
-		<link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
-		<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 		<style type="text/css">
 			body {
 				padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -23,7 +23,7 @@
 			 		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 			 			<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 		 			</a>
-		 			<a class="brand" href="/">Watashi no Akaunto</a>
+		 			<a class="brand" href="/">Capacitaci&oacute;n</a>
 		 			<div class="nav-collapse">
 		 				<ul class="nav">
 		 					<?php 
@@ -43,8 +43,7 @@
 	 								</ul>
  								</li>
 		 					<?php }else{ ?>
-		 						<li><a href="/Registro">Registrarse</a></li>
-			 					<li class="divider-vertical"></li>
+		 						
 			 					<li class="dropdown">
 			 						<a class="dropdown-toggle" href="#" data-toggle="dropdown">Iniciar Sesión <strong class="caret"></strong></a>
 			 						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
@@ -64,7 +63,16 @@
 		<div class="container">
 			<?php
 				if(isset($_GET["P"])){
-
+					switch (($_GET["P"])) {
+						case 'registro':{
+							require("Vistas/registro.php");
+							break;
+						}
+						
+						default:
+							# code...
+							break;
+					}
 				}else{
 					require("Vistas/default.php");
 				}
