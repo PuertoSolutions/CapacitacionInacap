@@ -47,8 +47,8 @@
 			 					<li class="dropdown">
 			 						<a class="dropdown-toggle" href="#" data-toggle="dropdown">Iniciar Sesión <strong class="caret"></strong></a>
 			 						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-			 							<form action="/Login" method="post" accept-charset="UTF-8" class="well">
-			 								<input id="user_username" style="margin-bottom: 15px;" type="text" name="mail" size="30"  required placeholder="E-Mail" />
+			 							<form action="Controladores/Registro.php" method="post" accept-charset="UTF-8" class="well">
+			 								<input id="user_username" style="margin-bottom: 15px;" type="text" name="usuario" size="30"  required placeholder="Nombre Usuario" />
 			 								<input id="user_password" style="margin-bottom: 15px;" type="password" name="pass" size="30" required placeholder="Contraseña" />
 			 								<input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Ingresar" />
 		 								</form>
@@ -65,7 +65,7 @@
 				if(isset($_GET["P"])){
 					switch (($_GET["P"])) {
 						case 'registro':{
-							require("Vistas/registro.php");
+							require("Vistas/registrousuario.php");
 							break;
 						}
 						

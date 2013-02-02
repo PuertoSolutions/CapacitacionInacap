@@ -11,17 +11,8 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 3308,
+				"buffer_size": 3258,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Vistas/registro.php",
-			"settings":
-			{
-				"buffer_size": 4,
-				"line_ending": "Windows",
-				"name": "hola"
 			}
 		},
 		{
@@ -29,6 +20,23 @@
 			"settings":
 			{
 				"buffer_size": 1541,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Vistas/registrousuario.php",
+			"settings":
+			{
+				"buffer_size": 4698,
+				"line_ending": "Windows",
+				"name": "<div class=\"container\">"
+			}
+		},
+		{
+			"file": "Controladores/Registro.php",
+			"settings":
+			{
+				"buffer_size": 54,
 				"line_ending": "Windows"
 			}
 		}
@@ -44,7 +52,7 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 125.0
 	},
 	"distraction_free":
 	{
@@ -57,10 +65,11 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Katniss/Documents/GitHub/CapacitacionInacap/Vistas/registro.php"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -99,15 +108,15 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 3308,
+						"buffer_size": 3258,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3187,
-								3187
+								3011,
+								3011
 							]
 						],
 						"settings":
@@ -115,41 +124,14 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 765.0,
+						"translation.x": 23.0,
+						"translation.y": 797.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Vistas/registro.php",
-					"settings":
-					{
-						"buffer_size": 4,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4,
-								4
-							]
-						],
-						"settings":
-						{
-							"auto_name": "hola",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "Vistas/default.php",
 					"settings":
 					{
@@ -162,6 +144,63 @@
 							[
 								1540,
 								1540
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Vistas/registrousuario.php",
+					"settings":
+					{
+						"buffer_size": 4698,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<div class=\"container\">",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Controladores/Registro.php",
+					"settings":
+					{
+						"buffer_size": 54,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":

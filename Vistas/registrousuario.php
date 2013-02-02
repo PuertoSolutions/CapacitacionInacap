@@ -1,13 +1,13 @@
-<div class="container">
+<link rel="stylesheet" href="assets/css/datepicker.css">
+<script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h2>&Oacute;rdenes de Trabajos Inacap</h2>
-        
-  <form class="form-horizontal">
-    <fieldset>
-      
-    <div class="control-group">
+        <div class="row">
+  <form action="">
+      <div class="span5">
+        <div class="control-group">
 
           <!-- Text input-->
           <label class="control-label" for="input01">Número OT</label>
@@ -16,8 +16,7 @@
             <p class="help-block"></p>
           </div>
         </div>
-
-    <div class="control-group">
+        <div class="control-group">
 
           <!-- Text input-->
           <label class="control-label" for="input01">Nombre OT</label>
@@ -26,8 +25,7 @@
             <p class="help-block"></p>
           </div>
         </div>
-
-    <div class="control-group">
+         <div class="control-group">
 
           <!-- Select Basic -->
           <label class="control-label">Sede OT</label>
@@ -40,8 +38,7 @@
           </div>
 
         </div>
-
-    <div class="control-group">
+        <div class="control-group">
           <label class="control-label">Tipo OT</label>
           <div class="controls">
       <!-- Multiple Radios -->
@@ -58,33 +55,35 @@
         </div>
 
     <div class="control-group">
-		<label class="control-label">Fecha Inicio</label>
-		<div class="controls">
-			<div class="input-append date" id="dp1" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-				<input class="span2" size="16" type="text" value="12-02-2012">
-				<span class="add-on"><i class="icon-th"></i></span>
-			</div>
-		</div>
-	</div>
+    <label class="control-label">Fecha Inicio</label>
+    <div class="controls">
+      <div class="input-append date" id="dp1" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+        <input class="span2" size="16" type="text" value="12-02-2012">
+        <span class="add-on"><i class="icon-th"></i></span>
+      </div>
+    </div>
+  </div>
 
     <div class="control-group">
-		<label class="control-label">Fecha Término</label>
-		<div class="controls">
-			<div class="input-append date" id="dp2" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-				<input class="span2" size="16" type="text" value="12-02-2012">
-				<span class="add-on"><i class="icon-th"></i></span>
-			</div>
-		</div>
-	</div>
+    <label class="control-label">Fecha Término</label>
+    <div class="controls">
+      <div class="input-append date" id="dp2" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+        <input class="span2" size="16" type="text" value="12-02-2012">
+        <span class="add-on"><i class="icon-th"></i></span>
+      </div>
+    </div>
+  </div>
           
     <div class="control-group">
-		<label class="control-label" for="input01">Horas</label>
-		<div class="controls">
-			<input type="text" placeholder="" class="input-xlarge">
-		</div>
-	</div>
-		
-    <div class="control-group">
+    <label class="control-label" for="input01">Horas</label>
+    <div class="controls">
+      <input type="text" placeholder="" class="input-xlarge">
+    </div>
+  </div>
+
+      </div>
+      <div class="span5">
+<div class="control-group">
 
           <!-- Text input-->
           <label class="control-label" for="input01">Participantes</label>
@@ -138,8 +137,7 @@
           </div>
 
         </div>
-
-    <div class="control-group">
+        <div class="control-group">
           <label class="control-label"></label>
 
           <!-- Button -->
@@ -148,8 +146,25 @@
           </div>
         </div>
 
-    </fieldset>
+      </div>
   </form>
+  
+</div>
+        
+ 
+      
+    
+
+    
+
+   
+
+    
+		
+    
+
+    
+
 <script language="javascript">
 	$('#dp1').datepicker();
 	$('#dp2').datepicker();
