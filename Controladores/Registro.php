@@ -10,6 +10,7 @@ if (empty($_POST["usuario"]) || empty($_POST["pass"])) {
     if ($_POST["usuario"] == "inacap" && $_POST["pass"] == "inacap") {
         # ADMINISTRADOR
         $_SESSION["Usuario"] = "ADMINISTRADOR";
+        header( 'Location: /cap' );
     }else{
         echo "mani :D ";
     }
