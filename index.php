@@ -1,86 +1,62 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-		<meta charset="utf-8">
-		<title>Capacitaci&oacute;n</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Sistema Pedidos Taxi Online">
-		<meta name="author" content="Puerto Solutions">
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-		<link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
-		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-		<style type="text/css">
-			body {
-				padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
-			}
-		</style>
-	</head>
-	<body>
-		<div class="navbar navbar-fixed-top">
-			 <div class="navbar-inner">
-			 	<div class="container"><!-- Collapsable nav bar -->
-			 		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-			 			<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-		 			</a>
-		 			<a class="brand" href="/">Capacitaci&oacute;n</a>
-		 			<div class="nav-collapse">
-		 				<ul class="nav">
-		 					<?php 
-		 						if(isset($_SESSION["Usuario"])){ ?>
-		 							<li><a href="#">algo</a></li>
-		 						<?php }
-		 					?>
-	 					</ul>
-		 				<ul class="nav pull-right">
-		 					<?php if(isset($_SESSION["Usuario"])){ ?>
-		 						<li id="fat-menu" class="dropdown">
-		 							<a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION["Usuario"]; ?> <b class="caret"></b></a>
-		 							<ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-		 								<li><a tabindex="-1" href="/Usuario/Preferencias">Preferencias</a></li>
-		 								<li class="divider"></li>
-		 								<li><a tabindex="-1" href="/LogOut">Cerrar Sesión</a></li>
-	 								</ul>
- 								</li>
-		 					<?php }else{ ?>
-		 						
-			 					<li class="dropdown">
-			 						<a class="dropdown-toggle" href="#" data-toggle="dropdown">Iniciar Sesión <strong class="caret"></strong></a>
-			 						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-			 							<form action="Controladores/Registro.php" method="post" accept-charset="UTF-8" class="well">
-			 								<input id="user_username" style="margin-bottom: 15px;" type="text" name="usuario" size="30"  required placeholder="Nombre Usuario" />
-			 								<input id="user_password" style="margin-bottom: 15px;" type="password" name="pass" size="30" required placeholder="Contraseña" />
-			 								<input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Ingresar" />
-		 								</form>
-			 						</div>
-		 						</li>
-		 					<?php } ?>
- 						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<?php
-				if(isset($_GET["P"])){
-					switch (($_GET["P"])) {
-						case 'registro':{
-							require("Vistas/registrousuario.php");
-							break;
-						}
-						
-						default:
-							# code...
-							break;
-					}
-				}else{
-					require("Vistas/default.php");
-				}
-			?>
-			<hr>
-			<footer>
-				<p>&copy; Puerto Solutions 2012</p>
-			</footer>
-		</div>
-	</body>
-</html>
+<?php
+    $_ENV['modo'] = "d"; // {d="desarrollo", p="produccion"}
+    error_reporting(E_ALL);
+    ini_set("display_errors", 1);
+
+    require 'lib/Slim/Slim.php';
+    require 'Vistas/Vista.php';
+
+    session_cache_limiter(FALSE);
+    session_start();
+
+    \Slim\Slim::registerAutoloader();
+    $vista = new Vista();
+
+    $app = new \Slim\Slim(
+        array("view" => $vista)
+    );
+
+    Vista::set_layout("default.php");
+    //------------------------------------------------------------------------GETS
+    $app -> get('/', function() use ($app){
+        $app -> render("index.php");
+    });
+
+    $app -> get('/phpinfo', function() use ($app){
+        phpinfo();
+    });
+
+    $app -> get('/RegistroUsuario', function() use ($app){
+        $app -> render("Administracion/RegistroUsuario.php");
+    });
+
+    $app -> get('/LogOut', function() use ($app){
+        session_destroy();
+        $app->render("avisos.php", array("Mensaje" => "", "Detalle" => "", "Tiempo" => 10));
+    });
+
+    //------------------------------------------------------------------------POSTs
+
+    $app -> post('/Login', function() use ($app){
+        if ($app->request()->params("usuario") == "inacap" || 
+            $app->request()->params("pass") == "inacap") {
+                $_SESSION["Usuario"] = "Administrador";
+                $app->render("avisos.php", array(
+                    "Mensaje" => "Redirigiendo",
+                    "Detalle" => "",
+                    "Tiempo" => 1000
+                    )
+                );
+        }else{
+            require 'Modelos/Usuario.php';
+            $usuario = new Usuario(
+                null, $app->request()->params("mail"), 
+                $app->request()->params("pass")
+            );
+            $app->render("avisos.php", $usuario->getLogin());
+        }
+    });
+
+    $app -> run();
+
+?>
