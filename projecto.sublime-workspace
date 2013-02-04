@@ -11,7 +11,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 3258,
+				"buffer_size": 1826,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,7 +19,7 @@
 			"file": "Vistas/default.php",
 			"settings":
 			{
-				"buffer_size": 1541,
+				"buffer_size": 5569,
 				"line_ending": "Windows"
 			}
 		},
@@ -27,7 +27,7 @@
 			"file": "Vistas/registrousuario.php",
 			"settings":
 			{
-				"buffer_size": 5006,
+				"buffer_size": 0,
 				"line_ending": "Windows",
 				"name": "<div class=\"container\">"
 			}
@@ -36,8 +36,17 @@
 			"file": "Controladores/Registro.php",
 			"settings":
 			{
-				"buffer_size": 54,
+				"buffer_size": 0,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Vistas/Administracion/empresa_alumnos.php",
+			"settings":
+			{
+				"buffer_size": 5,
+				"line_ending": "Windows",
+				"name": "dfsdf"
 			}
 		}
 	],
@@ -104,7 +113,6 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
@@ -112,23 +120,24 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 3258,
+						"buffer_size": 1826,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1422,
-								1422
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 23.0,
+						"translation.x": 0.0,
 						"translation.y": 333.0,
 						"zoom_level": 1.0
 					},
@@ -139,21 +148,21 @@
 					"file": "Vistas/default.php",
 					"settings":
 					{
-						"buffer_size": 1541,
+						"buffer_size": 5569,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1540,
-								1540
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -167,15 +176,15 @@
 					"file": "Vistas/registrousuario.php",
 					"settings":
 					{
-						"buffer_size": 5006,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								126,
-								126
+								0,
+								0
 							]
 						],
 						"settings":
@@ -201,7 +210,7 @@
 					"file": "Controladores/Registro.php",
 					"settings":
 					{
-						"buffer_size": 54,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -215,6 +224,33 @@
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Vistas/Administracion/empresa_alumnos.php",
+					"settings":
+					{
+						"buffer_size": 5,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"auto_name": "dfsdf",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
