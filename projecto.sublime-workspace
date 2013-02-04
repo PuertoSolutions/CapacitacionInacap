@@ -3,6 +3,14 @@
 	{
 		"selected_items":
 		[
+			[
+				"tipo",
+				"tipo_curso"
+			],
+			[
+				"Registro",
+				"RegistroUsuario"
+			]
 		]
 	},
 	"buffers":
@@ -11,7 +19,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 1826,
+				"buffer_size": 3447,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,24 +27,15 @@
 			"file": "Vistas/default.php",
 			"settings":
 			{
-				"buffer_size": 5569,
+				"buffer_size": 5635,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Vistas/registrousuario.php",
+			"file": "Vistas/Administracion/RegistroUsuario.php",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Windows",
-				"name": "<div class=\"container\">"
-			}
-		},
-		{
-			"file": "Controladores/Registro.php",
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 1030,
 				"line_ending": "Windows"
 			}
 		},
@@ -44,9 +43,24 @@
 			"file": "Vistas/Administracion/empresa_alumnos.php",
 			"settings":
 			{
-				"buffer_size": 5,
-				"line_ending": "Windows",
-				"name": "dfsdf"
+				"buffer_size": 1330,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Vistas/Administracion/tipo_curso.php",
+			"settings":
+			{
+				"buffer_size": 1321,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Vistas/Administracion/lugar.php",
+			"settings":
+			{
+				"buffer_size": 1319,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -78,6 +92,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Katniss/Documents/GitHub/CapacitacionInacap/Vistas/Administracion/tipo_curso",
+		"/C/Users/Katniss/Documents/GitHub/CapacitacionInacap/Vistas/Administracion/empresa_alumnos.php",
+		"/C/Users/Katniss/Documents/GitHub/CapacitacionInacap/Controladores/Registro.php",
+		"/C/Users/Katniss/Documents/GitHub/CapacitacionInacap/Vistas/registrousuario.php",
 		"/C/Users/Katniss/Documents/GitHub/CapacitacionInacap/Vistas/registro.php"
 	],
 	"find":
@@ -113,6 +131,7 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -120,15 +139,15 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 1826,
+						"buffer_size": 3447,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3104,
+								3104
 							]
 						],
 						"settings":
@@ -138,7 +157,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 333.0,
+						"translation.y": 1230.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -148,15 +167,15 @@
 					"file": "Vistas/default.php",
 					"settings":
 					{
-						"buffer_size": 5569,
+						"buffer_size": 5635,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2340,
+								2340
 							]
 						],
 						"settings":
@@ -166,38 +185,31 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 468.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Vistas/registrousuario.php",
+					"file": "Vistas/Administracion/RegistroUsuario.php",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1030,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								782,
+								782
 							]
 						],
 						"settings":
 						{
-							"auto_name": "<div class=\"container\">",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"zen_abbrev_cache":
-							[
-								"script",
-								"<script type=\"text/javascript\">${1001:$SELECTION}</script>"
-							]
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -207,23 +219,25 @@
 				},
 				{
 					"buffer": 3,
-					"file": "Controladores/Registro.php",
+					"file": "Vistas/Administracion/empresa_alumnos.php",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1330,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1001,
+								1001
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -233,24 +247,54 @@
 				},
 				{
 					"buffer": 4,
-					"file": "Vistas/Administracion/empresa_alumnos.php",
+					"file": "Vistas/Administracion/tipo_curso.php",
 					"settings":
 					{
-						"buffer_size": 5,
+						"buffer_size": 1321,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5,
-								5
+								1000,
+								1000
 							]
 						],
 						"settings":
 						{
-							"auto_name": "dfsdf",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 161.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Vistas/Administracion/lugar.php",
+					"settings":
+					{
+						"buffer_size": 1319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								998,
+								998
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
