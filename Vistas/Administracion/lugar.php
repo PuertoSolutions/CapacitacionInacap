@@ -2,22 +2,22 @@
   <form class="form-horizontal">
     <fieldset>
       <div id="legend" class="">
-        <legend class="">Empresas</legend>
+        <legend class="">Lugar Capacitación</legend>
       </div>
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">Nombre Empresa</label>
+          <label class="control-label" for="input01">Lugar</label>
           <div class="controls">
-            <input type="text" name="nombre_empresa" class="input-xlarge">
+            <input type="text" name="nombre_lugar" class="input-xlarge">
             <p class="help-block"></p>
           </div>
         </div><div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">Rut Empresa</label>
+          <label class="control-label" for="input01">ID Lugar</label>
           <div class="controls">
-            <input type="text" name="rut_empresa" class="input-xlarge">
+            <input type="text" name="id_lugar" class="input-xlarge">
             <p class="help-block"></p>
           </div>
         </div>
@@ -27,10 +27,10 @@
     <div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">Descripción Empresa</label>
+          <label class="control-label">Descripción Lugar</label>
           <div class="controls">
             <div class="textarea">
-                  <textarea name="des_empresa"> </textarea>
+                  <textarea name="des_lugar"> </textarea>
             </div>
           </div>
         </div><div class="control-group">

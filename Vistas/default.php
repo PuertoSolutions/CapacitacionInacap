@@ -39,15 +39,15 @@
                         <ul class="dropdown-menu">
                             <li><a href="#">Maestros <i class="icon-arrow-right"></i></a>
                                 <ul class="dropdown-menu sub-menu">
-                                    <li><a href="#">Empresas</a></li>
-                                    <li><a href="#">Proveedores</a></li>
+                                    <li><a href="/Registro/empresa_alumnos">Empresas</a></li>
+                                    <li><a href="/Registro/tipo_curso">Tipo Cursos</a></li>
                                     <li><a href="#">Tipos de Capacitaciones</a></li>
-                                    <li><a href="#">Lugares de Capacitaciones</a></li>
+                                    <li><a href="/Registro/lugar">Lugares de Capacitaciones</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Usuarios <i class="icon-arrow-right"></i></a>
                                 <ul class="dropdown-menu sub-menu">
-                                    <li><a href="/RegistroUsuario">Nuevo Usuario</a></li>
+                                    <li><a href="/Registro/RegistroUsuario">Nuevo Usuario</a></li>
                                     <li><a href="#">Visor Usuarios</a></li>
                                 </ul>
                             </li>

@@ -26,14 +26,41 @@
         phpinfo();
     });
 
-    $app -> get('/RegistroUsuario', function() use ($app){
-        $app -> render("Administracion/RegistroUsuario.php");
+    $app -> get('/Registro/:tipo', function($tipo) use ($app){
+        switch ($tipo) {
+            case 'Usuario': {
+                $app -> render("Administracion/RegistroUsuario.php");
+                 break;
+            }
+                case 'empresa_alumnos': {
+                $app -> render("Administracion/empresa_alumnos.php");
+                 break;
+            }
+            case 'RegistroUsuario': {
+                $app -> render("Administracion/RegistroUsuario.php");
+                 break;
+            }
+                        
+             case 'tipo_curso': {
+                $app -> render("Administracion/tipo_curso.php");
+                 break;
+            }
+
+            case 'lugar': {
+                $app -> render("Administracion/lugar.php");
+                 break;
+             }
+            default:
+                # code...
+                break;
+        }
     });
 
     $app -> get('/LogOut', function() use ($app){
         session_destroy();
         $app->render("avisos.php", array("Mensaje" => "", "Detalle" => "", "Tiempo" => 10));
     });
+
 
     //------------------------------------------------------------------------POSTs
 
@@ -54,6 +81,36 @@
                 $app->request()->params("pass")
             );
             $app->render("avisos.php", $usuario->getLogin());
+        }
+    });
+
+    $app -> post('/Registro/:tipo', function($tipo) use ($app){
+        switch ($tipo) {
+            case 'Usuario': {
+                
+                 break;
+            }
+                case 'empresa_alumnos': {
+                $app -> render("Administracion/empresa_alumnos.php");
+                 break;
+            }
+            case 'RegistroUsuario': {
+                $app -> render("Administracion/RegistroUsuario.php");
+                 break;
+            }
+                        
+             case 'tipo_curso': {
+                $app -> render("Administracion/tipo_curso.php");
+                 break;
+            }
+
+            case 'lugar': {
+                $app -> render("Administracion/lugar.php");
+                 break;
+             }
+            default:
+                # code...
+                break;
         }
     });
 
