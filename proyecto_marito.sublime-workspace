@@ -3,23 +3,39 @@
 	{
 		"selected_items":
 		[
+			[
+				"get",
+				"getOne  (function)"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "Modelos/Administracion/EmpresaAlumno.php",
+			"settings":
+			{
+				"buffer_size": 1570,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 58.0,
+		"height": 66.0,
 		"selected_items":
 		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: install",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 512.0
+		"width": 327.0
 	},
 	"console":
 	{
@@ -77,8 +93,36 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Modelos/Administracion/EmpresaAlumno.php",
+					"settings":
+					{
+						"buffer_size": 1570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1561,
+								1561
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 133.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -138,6 +182,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 258.0,
+	"side_bar_width": 230.0,
 	"status_bar_visible": true
 }
