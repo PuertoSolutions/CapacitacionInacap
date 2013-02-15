@@ -22,7 +22,61 @@
           </div>
         </div>
 
-    
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">Apéndices</label>
+          <div class="controls">
+            <input type="text" name="apendice" class="input-xlarge">
+            <p class="help-block"></p>
+          </div>
+        </div>
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">OAS</label>
+          <div class="controls">
+            <input type="text" name="oas" class="input-xlarge">
+            <p class="help-block"></p>
+          </div>
+        </div>
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">DC</label>
+          <div class="controls">
+            <input type="text" name="dc" class="input-xlarge">
+            <p class="help-block"></p>
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">DLCC</label>
+          <div class="controls">
+            <input type="text" name="dlcc" class="input-xlarge">
+            
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">Lugar Curso</label>
+          <div class="controls">
+            <input type="text" name="lugar_curso" class="input-xlarge">
+            <p class="help-block"></p>
+          </div>
+        </div>
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">Empresa que realiza curso</label>
+          <div class="controls">
+            <input type="text" name="empre_curso" class="input-xlarge">
+            <p class="help-block"></p>
+          </div>
+        </div>
 
     <div class="control-group">
 
